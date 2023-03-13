@@ -1,0 +1,45 @@
+.shopping-cart-screen {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  background: rgba(226, 226, 226, 0.201);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  z-index: 888;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .4s ease-in-out;
+  opacity: 0;
+  z-index: -9999;
+  visibility: hidden;
+ 
+}
+.shopping-cart-screen.active {
+  opacity: 1 !important;
+  z-index: 99 !important;
+  visibility: visible !important;
+}
+.shopping-cart {
+  /* From https://css.glass */
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(209, 209, 209, 0.718);
+  background-color: rgb(255, 255, 255);
+  width: 900px;
+  max-width: 100%;
+  min-height: 400px;
+  z-index: 99999999999999;
+  position: relative;
+}
+.shopping-cart .test-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  width: 100%;
+  font-size: 37px !important;
+  font-weight: 600 !important;
+}
